@@ -4,7 +4,9 @@
   "manifest_version": 2,
   "description": "微信文章提取器",
   "browser_action": {
-    "default_icon": "wx.ico"
+    "default_icon": "wx.ico",
+    "default_popup": "popup.html",
+    "default_title": "微信文章提取器"
   },
   "permissions": [
   ]
