@@ -1,0 +1,11 @@
+{
+  "name": "WXExtractor",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "微信文章提取器",
+  "browser_action": {
+    "default_icon": "wx.ico"
+  },
+  "permissions": [
+  ]
+}
