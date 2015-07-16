@@ -9,5 +9,13 @@
     "default_title": "微信文章提取器"
   },
   "permissions": [
+  ],
+  "content_scripts" :[
+    {
+      "all_frames": true,
+      "js": [ "lib/jquery-2.1.4.min.js","lib/underscore-min.js" ],
+      "css": [],
+      "matches": [ "https://mp.weixin.qq.com/*"]
+    }
   ]
 }
