@@ -1,6 +1,6 @@
 {
   "name": "WXExtractor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "manifest_version": 2,
   "description": "微信文章提取器",
   "browser_action": {
@@ -11,7 +11,7 @@
   "content_scripts":[{
     "matches":    ["https://mp.weixin.qq.com/*"],
     "js":         ["./lib/jquery-2.1.4.min.js", "./content.js"],
-    // "run_at":     "document_idle",
+    "run_at":     "document_end", // document_idle
     "all_frames": true
   }],
   "background": {
@@ -19,6 +19,7 @@
     "persistent": false //background page 变成 event page
    },
   "permissions": [
+    "storage",
     "http://*/*",
     "https://*/*"
   ]
