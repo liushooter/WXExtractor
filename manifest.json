@@ -10,8 +10,8 @@
   },
   "content_scripts":[{
     "matches":    ["https://mp.weixin.qq.com/*"],
-    "js":         ["./lib/jquery-2.1.4.min.js", "./content.js"],
-    // "run_at":     "document_idle",
+    "run_at":     "document_idle",
+    "js":         ["./lib/jquery-2.1.4.min.js", "./lib/firebase-2.2.9.js", "./content.js"],
     "all_frames": true
   }],
   "background": {
