@@ -1,3 +1,5 @@
 $(document).ready(function(){
-  $("#articles").val(chrome.extension.getBackgroundPage().link_data);
+  
+  var link_data = chrome.extension.getBackgroundPage().link_data;
+  $("#articles").val(link_data);
 });

@@ -15,7 +15,7 @@
     "all_frames": true
   }],
   "background": {
-    "scripts": ["./lib/jquery-2.1.4.min.js", "./bg.js"],
+    "scripts": ["./lib/jquery-2.1.4.min.js", "./lib/firebase-2.2.9.js", "./bg.js"],
     "persistent": false //background page 变成 event page
    },
   "permissions": [
